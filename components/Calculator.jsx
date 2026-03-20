@@ -99,15 +99,15 @@ export default function Calculator() {
                       display: "flex", alignItems: "center", justifyContent: "center",
                       fontWeight: 900, fontSize: 14, color: "#0a0a0a",
                       letterSpacing: "-0.5px",
-        }}>CL</div>div>
+        }}>CL</div>
                                       <span style={{ fontSize: 13, letterSpacing: "0.12em", color: "#888", textTransform: "uppercase" }}>
                                                     CanopyLink
-                                      </span>span>
-                          </div>div>
+                                      </span>
+                          </div>
                           <div style={{ fontSize: 11, color: "#444", letterSpacing: "0.08em" }}>
                                       BETA · EAST OF THE MISSISSIPPI
-                          </div>div>
-                </div>div>
+                          </div>
+                </div>
 
                 <div style={{ maxWidth: 780, margin: "0 auto", padding: "48px 24px 80px" }}>
                   {step === "segment" && (
@@ -123,7 +123,7 @@ export default function Calculator() {
                                       textTransform: "uppercase",
                                       padding: "4px 10px",
                                       marginBottom: 20,
-                    }}>Free Tool</div>div>
+                    }}>Free Tool</div>
                                                   <h1 style={{
                                       fontSize: "clamp(32px, 6vw, 58px)",
                                       fontFamily: "'DM Serif Display', Georgia, serif",
@@ -133,17 +133,17 @@ export default function Calculator() {
                                       color: "#f0ece4",
                     }}>
                                                                     You're probably<br />
-                                                                    <span style={{ color: "#c8f060" }}>overpaying.</span>span><br />
+                                                                    <span style={{ color: "#c8f060" }}>overpaying.</span><br />
                                                                     Let's find out by how much.
-                                                  </h1>h1>
+                                                  </h1>
                                                   <p style={{ fontSize: 15, color: "#888", lineHeight: 1.65, maxWidth: 480, margin: 0 }}>
                                                                     Compare what you're paying Uline to fair market pricing for secondary packaging — by segment, by SKU, by real volume.
-                                                  </p>p>
-                                  </div>div>
+                                                  </p>
+                                  </div>
 
                                   <div style={{ marginBottom: 12, fontSize: 11, letterSpacing: "0.14em", color: "#555", textTransform: "uppercase" }}>
                                                   Select your business type
-                                  </div>div>
+                                  </div>
                                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
                                     {SEGMENTS.map(s => (
                                       <button key={s} onClick={() => handleSegment(s)} style={{
@@ -164,11 +164,11 @@ export default function Calculator() {
                                                         >
                                                         <div style={{ marginBottom: 6, fontSize: 18 }}>
                                                           {s === "Moving & Storage" ? "📦" : s === "Restoration" ? "🔧" : s === "Self-Storage" ? "🏢" : "🏭"}
-                                                        </div>div>
+                                                        </div>
                                         {s}
-                                      </button>button>
+                                      </button>
                                     ))}
-                                  </div>div>
+                                  </div>
                     
                                 <div style={{
                                     marginTop: 48,
@@ -185,12 +185,12 @@ export default function Calculator() {
                                       ["$0", "to find out what you should pay"],
                                     ].map(([num, label]) => (
                                                       <div key={num} style={{ textAlign: "center" }}>
-                                                                        <div style={{ fontSize: 22, fontFamily: "'DM Serif Display', Georgia, serif", color: "#c8f060", marginBottom: 4 }}>{num}</div>div>
-                                                                        <div style={{ fontSize: 11, color: "#666", lineHeight: 1.4 }}>{label}</div>div>
-                                                      </div>div>
+                                                                        <div style={{ fontSize: 22, fontFamily: "'DM Serif Display', Georgia, serif", color: "#c8f060", marginBottom: 4 }}>{num}</div>
+                                                                        <div style={{ fontSize: 11, color: "#666", lineHeight: 1.4 }}>{label}</div>
+                                                      </div>
                                                     ))}
-                                </div>div>
-                    </div>div>
+                                </div>
+                    </div>
                         )}
                 
                   {step === "calculator" && (
@@ -199,17 +199,17 @@ export default function Calculator() {
                                               <button onClick={() => { setAnimIn(false); setTimeout(() => setStep("segment"), 100); }}
                                                                 style={{ background: "none", border: "none", color: "#555", cursor: "pointer", fontSize: 13, fontFamily: "inherit", padding: 0 }}>
                                                               ← Back
-                                              </button>button>
+                                              </button>
                                               <div style={{ width: 1, height: 16, background: "#2a2a2a" }} />
-                                              <span style={{ fontSize: 13, color: "#c8f060", letterSpacing: "0.06em" }}>{segment}</span>span>
-                                </div>div>
+                                              <span style={{ fontSize: 13, color: "#c8f060", letterSpacing: "0.06em" }}>{segment}</span>
+                                </div>
                     
                                 <h2 style={{ fontFamily: "'DM Serif Display', Georgia, serif", fontWeight: 400, fontSize: 28, margin: "0 0 8px", color: "#f0ece4" }}>
                                               Enter your typical order quantities
-                                </h2>h2>
+                                </h2>
                                 <p style={{ color: "#666", fontSize: 13, margin: "0 0 28px" }}>
                                               Use your most recent order as a reference.
-                                </p>p>
+                                </p>
                     
                                 <div style={{ display: "flex", gap: 0, marginBottom: 28, width: "fit-content", border: "1px solid #2a2a2a" }}>
                                   {["monthly", "annually"].map(f => (
@@ -227,17 +227,17 @@ export default function Calculator() {
                                                           transition: "all 0.15s",
                                       }}>
                                         {f}
-                                      </button>button>
+                                      </button>
                                     ))}
-                                </div>div>
+                                </div>
                     
                                 <div style={{ display: "flex", flexDirection: "column", gap: 1, marginBottom: 32 }}>
                                               <div style={{ display: "grid", gridTemplateColumns: "1fr 90px 90px 90px", gap: 12, padding: "8px 16px", fontSize: 10, color: "#444", letterSpacing: "0.12em", textTransform: "uppercase" }}>
-                                                              <span>Product</span>span>
-                                                              <span style={{ textAlign: "right" }}>Uline</span>span>
-                                                              <span style={{ textAlign: "right" }}>Fair Market</span>span>
-                                                              <span style={{ textAlign: "right" }}>Qty</span>span>
-                                              </div>div>
+                                                              <span>Product</span>
+                                                              <span style={{ textAlign: "right" }}>Uline</span>
+                                                              <span style={{ textAlign: "right" }}>Fair Market</span>
+                                                              <span style={{ textAlign: "right" }}>Qty</span>
+                                              </div>
                                   {products.map(p => {
                                       const qty = quantities[p.id] || 0;
                                       return (
@@ -252,11 +252,11 @@ export default function Calculator() {
                                                                                 transition: "all 0.15s",
                                                           }}>
                                                                               <div>
-                                                                                                    <div style={{ fontSize: 13, color: "#e0dcd4", marginBottom: 2 }}>{p.name}</div>div>
-                                                                                                    <div style={{ fontSize: 10, color: "#444" }}>{p.unit} · {p.category}</div>div>
-                                                                              </div>div>
-                                                                              <div style={{ textAlign: "right", fontSize: 13, color: "#e55" }}>{fmtDec(p.uline)}</div>div>
-                                                                              <div style={{ textAlign: "right", fontSize: 13, color: "#c8f060" }}>{fmtDec(p.fair)}</div>div>
+                                                                                                    <div style={{ fontSize: 13, color: "#e0dcd4", marginBottom: 2 }}>{p.name}</div>
+                                                                                                    <div style={{ fontSize: 10, color: "#444" }}>{p.unit} · {p.category}</div>
+                                                                              </div>
+                                                                              <div style={{ textAlign: "right", fontSize: 13, color: "#e55" }}>{fmtDec(p.uline)}</div>
+                                                                              <div style={{ textAlign: "right", fontSize: 13, color: "#c8f060" }}>{fmtDec(p.fair)}</div>
                                                                               <div style={{ textAlign: "right" }}>
                                                                                                     <input
                                                                                                                               type="number"
@@ -279,11 +279,11 @@ export default function Calculator() {
                                                                                                                               onFocus={e => e.target.style.borderColor = "#c8f060"}
                                                                                                                               onBlur={e => e.target.style.borderColor = "#2a2a2a"}
                                                                                                                             />
-                                                                              </div>div>
-                                                          </div>div>
+                                                                              </div>
+                                                          </div>
                                                         );
                     })}
-                                </div>div>
+                                </div>
                     
                       {hasQty && (
                                     <div style={{
@@ -294,7 +294,7 @@ export default function Calculator() {
                                     }}>
                                                     <div style={{ fontSize: 11, letterSpacing: "0.14em", color: "#555", textTransform: "uppercase", marginBottom: 20 }}>
                                                                       Your cost breakdown — {frequency}
-                                                    </div>div>
+                                                    </div>
                                                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 24, marginBottom: 24 }}>
                                                       {[
                                       { label: "Uline Total", val: fmt(totalUline), color: "#e55" },
@@ -302,11 +302,11 @@ export default function Calculator() {
                                       { label: "You're Overpaying", val: fmt(savings), color: "#fff" },
                                                         ].map(({ label, val, color }) => (
                                                                               <div key={label}>
-                                                                                                    <div style={{ fontSize: 10, color: "#555", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 6 }}>{label}</div>div>
-                                                                                                    <div style={{ fontSize: 26, fontFamily: "'DM Serif Display', Georgia, serif", color }}>{val}</div>div>
-                                                                              </div>div>
+                                                                                                    <div style={{ fontSize: 10, color: "#555", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 6 }}>{label}</div>
+                                                                                                    <div style={{ fontSize: 26, fontFamily: "'DM Serif Display', Georgia, serif", color }}>{val}</div>
+                                                                              </div>
                                                                             ))}
-                                                    </div>div>
+                                                    </div>
                                     
                                       {frequency === "monthly" && savings > 0 && (
                                                         <div style={{
@@ -317,13 +317,13 @@ export default function Calculator() {
                                                                               alignItems: "center",
                                                                               justifyContent: "space-between",
                                                         }}>
-                                                                            <span style={{ fontSize: 12, color: "#666" }}>That's <strong style={{ color: "#f0ece4" }}>{fmt(annualSavings)}</strong>strong> per year leaving your margins.</span>span>
+                                                                            <span style={{ fontSize: 12, color: "#666" }}>That's <strong style={{ color: "#f0ece4" }}>{fmt(annualSavings)}</strong> per year leaving your margins.</span>
                                                                             <span style={{ background: "#c8f060", color: "#0a0a0a", fontSize: 11, fontWeight: 700, padding: "3px 10px", letterSpacing: "0.06em" }}>
                                                                               {savingsPct}% OVERPAY
-                                                                            </span>span>
-                                                        </div>div>
+                                                                            </span>
+                                                        </div>
                                                     )}
-                                    </div>div>
+                                    </div>
                                 )}
                     
                       {hasQty && !showLead && (
@@ -345,17 +345,17 @@ export default function Calculator() {
                                                       onMouseLeave={e => e.currentTarget.style.background = "#c8f060"}
                                                     >
                                                     Get a real quote from a regional distributor →
-                                    </button>button>
+                                    </button>
                                 )}
                     
                       {showLead && !submitted && (
                                     <div style={{ border: "1px solid #2a2a2a", padding: 28, background: "#0f0f0f" }}>
                                                     <div style={{ fontSize: 16, fontFamily: "'DM Serif Display', Georgia, serif", marginBottom: 6 }}>
                                                                       We'll match you with the right regional supplier.
-                                                    </div>div>
+                                                    </div>
                                                     <p style={{ fontSize: 12, color: "#666", margin: "0 0 24px" }}>
                                                                       No spam. A real person reaches out with pricing — usually within 1 business day.
-                                                    </p>p>
+                                                    </p>
                                                     <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                                                       {[["name", "Your name"], ["company", "Company name"], ["email", "Work email"]].map(([field, placeholder]) => (
                                                           <input key={field}
@@ -393,26 +393,26 @@ export default function Calculator() {
                                                                                                                     transition: "all 0.2s",
                                                                                               }}>
                                                                                           Connect me with a supplier
-                                                                      </button>button>
-                                                    </div>div>
-                                    </div>div>
+                                                                      </button>
+                                                    </div>
+                                    </div>
                                 )}
                     
                       {submitted && (
                                     <div style={{ border: "1px solid #c8f060", padding: 28, background: "#0d110a", textAlign: "center" }}>
-                                                    <div style={{ fontSize: 28, marginBottom: 8 }}>✓</div>div>
+                                                    <div style={{ fontSize: 28, marginBottom: 8 }}>✓</div>
                                                     <div style={{ fontFamily: "'DM Serif Display', Georgia, serif", fontSize: 20, marginBottom: 8 }}>
                                                                       You're in the system, {lead.name.split(" ")[0]}.
-                                                    </div>div>
+                                                    </div>
                                                     <p style={{ fontSize: 13, color: "#888", margin: 0 }}>
                                                                       Expect to hear from a regional specialist within 1 business day.<br />
-                                                                      Estimated annual savings on your profile: <strong style={{ color: "#c8f060" }}>{fmt(annualSavings || savings * 12)}</strong>strong>
-                                                    </p>p>
-                                    </div>div>
+                                                                      Estimated annual savings on your profile: <strong style={{ color: "#c8f060" }}>{fmt(annualSavings || savings * 12)}</strong>
+                                                    </p>
+                                    </div>
                                 )}
-                    </div>div>
+                    </div>
                         )}
-                </div>div>
+                </div>
         
               <style>{`
                       @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Mono:wght@400;500;700&display=swap');
@@ -422,7 +422,7 @@ export default function Calculator() {
                                                       ::-webkit-scrollbar { width: 4px; }
                                                               ::-webkit-scrollbar-track { background: #0a0a0a; }
                                                                       ::-webkit-scrollbar-thumb { background: #2a2a2a; }
-                                                                            `}</style>style>
-        </div>div>
+                                                                            `}</style>
+        </div>
       );
 }</button>
