@@ -425,4 +425,4 @@ export default function Calculator() {
                                                                             `}</style>
         </div>
       );
-}</button>
+}
